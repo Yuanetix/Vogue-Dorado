@@ -242,8 +242,6 @@ nav .right a:hover {
   opacity: 0.85;
 }
 
-/* Info-section */
-
 .info-section {
   background-color: var(--bg-dark);
   padding: 60px 120px;
@@ -297,4 +295,148 @@ nav .right a:hover {
   color: var(--bg-header);
   font-size: 12px;
   font-weight: 200;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav .right {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .right a {
+    margin: 10px 0;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    min-height: 70vh;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .benefits-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .benefit-item {
+    width: 100%;
+  }
+
+  .featured-section {
+    padding: 40px 20px;
+  }
+
+  .featured-cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .featured-card {
+    width: 100%;
+  }
+
+  .info-section {
+    padding: 40px 20px;
+  }
+
+  .info-policy {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav {
+    padding: 20px 60px;
+  }
+
+  .hero-section {
+    padding: 60px 60px;
+    min-height: 80vh;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .benefits-section {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .benefit-item {
+    width: 45%;
+  }
+
+  .featured-section {
+    padding: 60px 60px;
+  }
+
+  .featured-cards {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .featured-card {
+    width: 45%;
+  }
+
+  .info-section {
+    padding: 60px 60px;
+  }
+
+  .info-policy {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav {
+    padding: 20px 120px;
+  }
+
+  .hero-section {
+    padding: 0 120px;
+    min-height: 90vh;
+  }
+
+  .benefits-section {
+    padding: 60px 120px;
+  }
+
+  .featured-section {
+    padding: 60px 120px;
+  }
+
+  .info-section {
+    padding: 60px 120px;
+  }
 }
